@@ -77,9 +77,9 @@ A criptografia deve conter  as seguintes características:
     <img src="./Assets/página-inicial-tablet.png" alt="Página inicial tablet" width="270px" />
     <img src="./Assets/mensagem-incorreta-tablet.png" alt="Página com um dos erros (mensagem fora dos padrões) tablet" width="270px" />
     <img src="./Assets/mensagem-criptografada-tablet.png" alt="Página mensagem criptografada tablet" width="270px" />
-    <img src="./Assets/página-inicial-mobile.png" alt="Página inicial mobile" width="300px" />
-    <img src="./Assets/mensagem-incorreta-mobile.png" alt="Página com um dos erros (mensagem fora dos padrões) mobile" width="300px" />
-    <img src="./Assets/mensagem-criptografada-mobile.png" alt="Página mensagem criptografada mobile" width="300px" />
+    <img src="./Assets/página-inicial-mobile.png" alt="Página inicial mobile" width="270px" />
+    <img src="./Assets/mensagem-incorreta-mobile.png" alt="Página com um dos erros (mensagem fora dos padrões) mobile" width="270px" />
+    <img src="./Assets/mensagem-criptografada-mobile.png" alt="Página mensagem criptografada mobile" width="270px" />
 </div>
 
 #
