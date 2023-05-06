@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Projeto de Criptografia de Mensagens apresentado pelo Programa ONE da Oracle com a Alura. Ao inserir sua mensagem no campo 'Digite ou cole sua mensagem aqui' e apertar o botão 'Criptografar', as vogais na mensagem são trocadas por chaves fornecidas pelo próprio programa. É possível também fazer o caminho inverso digitando ou colando uma mensagem já criptografada e apertando o botão 'Descriptografar'." />
+
+		<title>(Des)Criptografe suas mensagens</title>
+
+		<link rel="stylesheet" href="./CSS/style.css" />
+		<link rel="shortcut icon" href="./Assets/Logotipo-titulo.png" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet" />
+	</head>
+
+	<body>
+
+		<header>
+			<div class="cabecalho">
+				<img src="./Assets/Logotipo.png" alt="Logotipo Alura." class="img-cabecalho" />
+				<p class="titulo-cabecalho">Envie e decodifique mensagens secretas!</p>
+			</div>
+		</header>
+		
+		<main>
+			
+			<div id="container-principal">				
+				<div class="container-entrada">
+					<p class="titulo-container-entrada">Digite ou cole sua mensagem aqui</p>
+					<textarea id="entrada-mensagem" name="entrada-mensagem" placeholder="Sua mensagem"></textarea></label>
+					<a>Avisos</a>
+					<p class="atencao"><ion-icon name="alert-circle-outline"></ion-icon> Atenção! Apenas letras minúsculas e sem acentos.</p>
+					
+					<div class="botoes-criptografia">
+						<button onclick="criptografa()" class="botao-criptografar" type="button">Criptografar</button>
+						<button onclick="descriptografa()" class="botao-descriptografar" type="button">Descriptografar</button>				
+					</div>
+				</div>
+
+				<div class="container-saida">
+					<div id="saida-mensagem">
+						<div class="container-imagem"><img src="./Assets/Lupa-mensagem-transparente.gif" alt="Lupa" /></div>
+						<p class="titulo-container-saida">Procurando sua mensagem...</p>
+						<p class="digite">Digite ou cole o que deseja criptografar/descriptografar acima.</p>						
+					</div>
+				</div>				
+			</div>
+
+		</main>
+
+		<footer>			
+			<div class="rodape">
+				<p class="frase-rodape">Desenvolvido por Letícia dos Santos Viana como parte do <a href="https://www.oracle.com/br/education/oracle-next-education/" target="blank">Programa ONE - Oracle Next Education da Oracle</a> com a <a href="https://www.alura.com.br/" target="blank">Alura</a> - 2023</p>
+				<p class="redes-sociais"><a href="https://www.linkedin.com/in/leticiaviana-trad-dev/" target="_blank"><ion-icon name="logo-linkedin" alt="Logo LinkedIn"></a></ion-icon> | <a href="https://github.com/lettyviana" target="_blank"><ion-icon name="logo-github" alt="Logo GitHub"></ion-icon></a></p>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	</body>
+
+</html>

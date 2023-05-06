@@ -1,0 +1,795 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* início responsivo desktop */
+body {
+	background: radial-gradient(circle, rgba(207,55,206,1) 0%, rgb(226, 186, 238) 100%);
+	font-family: 'Poppins', sans-serif;
+	height: 100vh;
+	width: auto;
+}
+
+header {
+	padding: 12px;
+}
+
+.cabecalho {
+	align-content: center;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;		
+}
+
+.img-cabecalho {
+	width: 150px;
+}
+
+.titulo-cabecalho {
+	color: #9d05a8;
+	font-size: 3em;
+	font-weight: bold;
+	margin: 0;
+	text-transform: uppercase;	
+}
+
+main {
+	height: auto;
+	margin: 0 auto;
+	width: auto;
+}
+
+#container-principal {
+	background: none;
+	height: auto;
+	margin: 0 auto;
+	width: auto;
+}
+
+.container-entrada {
+	background: #f8f6f6;
+	border: 2px solid #818181c4;
+	border-radius: 25px;
+	height: 450px;
+	margin: 0 auto;
+	padding: 5px;	
+	width: 1220px;
+}
+
+.titulo-container-entrada {
+	font-size: 2em;
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+}
+
+#entrada-mensagem {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	color: black;
+	display: flex;
+	font-size: 1.7em;
+	height: 235px;
+	justify-content: center;
+	margin: auto;
+	outline: none;	
+	resize: none;		
+	min-width: 1200px;
+}
+
+.container-entrada a {
+	display: block;
+	margin: 0 auto;
+	padding: 5px;
+	text-align: center;
+	max-width: max-content;
+	visibility: hidden;
+}
+
+.container-entrada.erro a {
+	background-color: #aa1c1c;
+	border: 2px solid #c01f1f;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 1.3em;
+	visibility: visible;
+	animation: chacoalha .3s ease infinite;
+}
+
+.atencao {
+	font-size: 1.4em;
+	font-weight: bold;
+	left: 0;
+	margin: auto;
+	margin-bottom: 10px;
+	right: 0;
+	text-align: center;
+}
+
+.botoes-criptografia {
+	left: 0;
+	margin: auto;
+	right: 0;
+	text-align: center;		
+}
+
+.botao-criptografar {
+	background-color: #6f0277;
+	box-sizing: content-box;
+	border: 2px solid #700070;
+	border-radius: 25px;
+	color: #e1d8f7;
+	cursor: pointer;
+	font-size: 1.3em;
+	font-weight: bold;
+	height: 45px;	
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition-duration: 0.5s;
+	width: 240px;
+}
+
+.botao-criptografar:hover, .botao-criptografar:active {
+	background-color: #c468ff;
+	box-sizing: content-box;	
+	border: 2px solid #B947FF;
+	border-radius: 25px;
+	color: #1A0022;
+	font-size: 1.4em;
+	font-weight: bold;
+	height: 50px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition-duration: 0.5s;
+	width: 250px;
+}
+
+.botao-descriptografar {
+	background-color: #6f0277;
+	box-sizing: content-box;
+	border: 2px solid #5D007A;
+	border-radius: 25px;	
+	color: #e1d8f7;
+	cursor: pointer;
+	font-size: 1.3em;
+	font-weight: bold;
+	height: 45px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition-duration: 0.5s;
+	width: 240px;
+}
+
+.botao-descriptografar:hover, .botao-descriptografar:active {
+	background-color: #c468ff;
+	box-sizing: content-box;
+	border: 2px solid #B947FF;
+	border-radius: 25px;
+	color: #1A0022;
+	font-size: 1.4em;
+	font-weight: bold;
+	height: 50px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition-duration: 0.5s;
+	width: 250px;
+}
+
+.container-saida {
+	background: linear-gradient(to right,rgba(203,155,255,0.2),rgba(153,9,163,0.8));
+	border: 2px solid #6f0277;
+	border-radius: 25px;
+	height: 350px;
+	margin: 2px auto;		
+	max-width: 1220px;
+}
+
+#saida-mensagem {
+	height: 340px;
+	outline: none;	
+	padding: 5px;
+	width: 1215px;
+}
+
+.container-imagem {
+	float: left;
+}
+
+.container-imagem img {		
+	margin: 0 auto;
+	width: 330px;
+}
+
+.titulo-container-saida {
+	text-shadow: -3px 0 #75797a;
+	font-size: 2em;		
+	font-weight: bold;
+	left: 0;
+	margin-top: 80px;
+	right: 0;
+	text-align: center;
+}
+	
+.digite {
+	font-size: 1.6em;
+	left: 0;
+	margin-top: 50px;
+	right: 0;
+	text-align: center;
+}
+
+.botao-copiar {
+	background-color: #CB9BFF;
+	border: 2px solid #BB7DFF;
+	border-radius: 25px;
+	bottom: -15px;
+	box-sizing: content-box;
+	color: #1A0022;
+	cursor: pointer;
+	font-size: 1.5em;
+	font-weight: bold;
+	height: 55px;		
+	left: 42%;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;		
+	transition-duration: 0.5s;
+	width: 180px;
+}
+
+.botao-copiar:hover, .botao-copiar:active {
+	background-color: #6f0277;
+	border: 2px solid rgb(156, 60, 216);
+	border-radius: 25px;
+	box-sizing: content-box;
+	font-size: 1.7em;
+	height: 60px;
+	color: #e1d8f7;
+	width: 195px;
+}
+
+footer {		
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;		
+	text-align: center;
+	max-width: 100%;
+}
+
+.frase-rodape {		
+	font-size: 1.1em;
+	font-weight: bold;		
+}
+
+.frase-rodape a {
+	color: #9c08a7;
+	text-decoration: none;		
+}
+
+.frase-rodape a:hover {
+	color: #8219f1;
+	text-decoration: underline;
+}
+
+.redes-sociais {
+	display: flex;
+	font-size: 1.2em;
+	justify-content: center;
+}
+
+.redes-sociais a {
+	color: #9c08a7;	
+}
+
+.redes-sociais a:hover {
+	color: #8219f1;
+	text-decoration: none;
+}
+
+/* Fim responsivo para desktop 1920x1080 */
+
+/* Início responsivo desktop padrão Alura */
+
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+	
+	.img-cabecalho {
+		width: 120px;
+	}
+	
+	.titulo-cabecalho {
+		font-size: 2.5em;			
+	}
+	
+	.container-entrada {
+		height: 320px;
+		width: 1000px;
+	}
+	
+	.titulo-container-entrada {
+		font-size: 1.7em;
+	}
+	
+	#entrada-mensagem {
+		font-size: 1.4em;
+		height: 145px;
+		min-width: 980px;
+	}
+	
+	.container-entrada a {
+		padding: 2px;
+	}
+	
+	.container-entrada.erro a {
+		font-size: 1.2em;
+	}
+	
+	.atencao {
+		font-size: 1.1em;
+		font-weight: bold;
+		margin-bottom: 2px;		
+	}
+	
+	.botao-criptografar {
+		font-size: 1.1em;
+		height: 40px;	
+		width: 220px;
+	}
+	
+	.botao-criptografar:hover, .botao-criptografar:active {
+		font-size: 1.2em;
+		height: 45px;
+		width: 230px;
+	}
+	
+	.botao-descriptografar {
+		font-size: 1.1em;
+		height: 40px;
+		width: 220px;
+	}
+	
+	.botao-descriptografar:hover, .botao-descriptografar:active {
+		font-size: 1.2em;
+		height: 45px;
+		width: 230px;
+	}
+	
+	.container-saida {
+		height: 260px;
+		max-width: 1000px;
+	}
+	
+	#saida-mensagem {
+		height: 260px;
+		width: 990px;
+	}
+	
+	.container-imagem img {		
+		width: 240px;
+	}
+	
+	.titulo-container-saida {
+		font-size: 1.7em;		
+		margin-top: 60px;
+	}
+		
+	.digite {
+		font-size: 1.3em;
+		margin-top: 40px;
+	}
+	
+	.botao-copiar {
+		bottom: -45px;
+		font-size: 1.1em;
+		height: 40px;		
+		width: 160px;
+	}
+	
+	.botao-copiar:hover, .botao-copiar:active {
+		font-size: 1.2em;
+		height: 45px;
+		width: 175px;
+	}
+	
+	.frase-rodape {		
+		font-size: 0.9em;
+	}
+	
+	.redes-sociais {
+		font-size: 1em;
+	}
+}
+
+/* Fim responsivo desktop padrão Alura */
+
+/* Início responsividade 1280px */
+
+@media only screen and (max-width: 1280px) {
+	
+	.img-cabecalho {
+		width: 120px;
+	}
+	
+	.titulo-cabecalho {
+		font-size: 2.5em;			
+	}
+	
+	.container-entrada {
+		height: 320px;
+		width: 1000px;
+	}
+	
+	.titulo-container-entrada {
+		font-size: 1.7em;
+	}
+	
+	#entrada-mensagem {
+		font-size: 1.4em;
+		height: 145px;
+		min-width: 980px;
+	}
+	
+	.container-entrada a {
+		padding: 2px;
+	}
+	
+	.container-entrada.erro a {
+		font-size: 1.2em;
+	}
+	
+	.atencao {
+		font-size: 1.1em;
+		font-weight: bold;
+		margin-bottom: 2px;		
+	}
+	
+	.botao-criptografar {
+		font-size: 1.1em;
+		height: 40px;	
+		width: 220px;
+	}
+	
+	.botao-criptografar:hover, .botao-criptografar:active {
+		font-size: 1.2em;
+		height: 45px;
+		width: 230px;
+	}
+	
+	.botao-descriptografar {
+		font-size: 1.1em;
+		height: 40px;
+		width: 220px;
+	}
+	
+	.botao-descriptografar:hover, .botao-descriptografar:active {
+		font-size: 1.2em;
+		height: 45px;
+		width: 230px;
+	}
+	
+	.container-saida {
+		height: 260px;
+		max-width: 1000px;
+	}
+	
+	#saida-mensagem {
+		height: 260px;
+		width: 990px;
+	}
+	
+	.container-imagem img {		
+		width: 240px;
+	}
+	
+	.titulo-container-saida {
+		font-size: 1.7em;		
+		margin-top: 60px;
+	}
+		
+	.digite {
+		font-size: 1.3em;
+		margin-top: 40px;
+	}
+	
+	.botao-copiar {
+		bottom: -45px;
+		font-size: 1.1em;
+		height: 40px;		
+		width: 160px;
+	}
+	
+	.botao-copiar:hover, .botao-copiar:active {
+		font-size: 1.2em;
+		height: 45px;
+		width: 175px;
+	}
+	
+	.frase-rodape {		
+		font-size: 0.9em;
+	}
+	
+	.redes-sociais {
+		font-size: 1em;
+	}
+}
+
+/* Fim responsividade 1280px */
+
+/* Início responsividade tablet */
+
+@media only screen and (max-width: 768px) {
+	
+	.img-cabecalho {
+		width: 140px;
+	}
+	
+	.cabecalho {
+		flex-direction: column;
+	}
+
+	.titulo-cabecalho {
+		font-size: 2.1em;			
+	}
+	
+	.container-entrada {
+		height: 500px;
+		width: 640px;
+	}
+	
+	.titulo-container-entrada {
+		font-size: 1.6em;
+	}
+	
+	#entrada-mensagem {
+		font-size: 1.6em;
+		height: 330px;
+		min-width: 620px;
+	}
+	
+	.container-entrada a {
+		padding: 2px;
+	}
+	
+	.container-entrada.erro a {
+		font-size: 1.1em;
+	}
+	
+	.atencao {
+		font-size: 1.1em;
+		margin-bottom: 2px;		
+	}
+	
+	.botao-criptografar {
+		font-size: 1.2em;
+		height: 40px;	
+		width: 220px;
+	}
+	
+	.botao-criptografar:hover, .botao-criptografar:active {
+		font-size: 1.3em;
+		height: 45px;
+		width: 230px;
+	}
+	
+	.botao-descriptografar {
+		font-size: 1.15em;
+		height: 40px;
+		width: 220px;
+	}
+	
+	.botao-descriptografar:hover, .botao-descriptografar:active {
+		font-size: 1.25em;
+		height: 45px;
+		width: 230px;
+	}
+	
+	.container-saida {
+		height: 450px;
+		max-width: 640px;
+	}
+	
+	#saida-mensagem {
+		height: 270px;
+		width: 635px;
+	}
+		
+	.container-imagem {
+		display: block;
+		margin: 0 auto;
+		float: none;
+		text-align: center;
+	}
+
+	.container-imagem img {		
+		width: 300px;
+	}
+	
+	
+	.titulo-container-saida {
+		font-size: 1.6em;		
+		margin-top: 0px;
+	}
+		
+	.digite {
+		font-size: 1.2em;
+		margin-top: 20px;
+	}
+	
+	.botao-copiar {
+		font-size: 1.1em;
+		height: 40px;
+		left: 38%;
+		top: 55px;
+		width: 160px;
+	}
+	
+	.botao-copiar:hover, .botao-copiar:active {
+		font-size: 1.2em;
+		height: 45px;
+		width: 175px;
+	}
+	
+	.frase-rodape {		
+		font-size: 0.9em;
+		max-width: 640px;
+	}
+	
+	.redes-sociais {
+		font-size: 1em;
+	}
+
+}
+
+/* Fim responsividade tablet */
+
+/* Início responsividade celular (375px) */
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+	
+	.img-cabecalho {
+		width: 100px;
+	}
+	
+	.cabecalho {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.titulo-cabecalho {
+		font-size: 1.5em;
+		line-height: 1;			
+	}
+	
+	.container-entrada {
+		height: 400px;
+		width: 300px;
+	}
+	
+	.titulo-container-entrada {
+		font-size: 0.9em;
+	}
+	
+	#entrada-mensagem {
+		font-size: 1.2em;
+		height: 255px;
+		min-width: 285px;
+	}
+	
+	.container-entrada a {
+		padding: 2px;
+	}
+	
+	.container-entrada.erro a {
+		font-size: 0.7em;
+	}
+	
+	.atencao {
+		font-size: 0.7em;
+		margin-bottom: 2px;		
+	}
+	
+	.botao-criptografar {
+		font-size: 0.8em;
+		height: 30px;	
+		width: 130px;
+	}
+	
+	.botao-criptografar:hover, .botao-criptografar:active {
+		font-size: 0.85em;
+		height: 32px;
+		width: 135px;
+	}
+	
+	.botao-descriptografar {
+		font-size: 0.7em;
+		height: 30px;
+		width: 130px;
+	}
+	
+	.botao-descriptografar:hover, .botao-descriptografar:active {
+		font-size: 0.75em;
+		height: 32px;
+		width: 135px;
+	}
+	
+	.container-saida {
+		height: 350px;
+		max-width: 300px;
+	}
+	
+	#saida-mensagem {
+		height: 195px;
+		width: 295px;
+	}	
+	
+	.container-imagem {
+		display: block;
+		margin: 0 auto;
+		float: none;
+		text-align: center;
+	}
+
+	.container-imagem img {		
+		width: 160px;
+	}
+	
+	
+	.titulo-container-saida {
+		font-size: 1.1em;		
+		margin-top: -10px;
+	}
+		
+	.digite {
+		font-size: 0.9em;
+		font-weight: bold;
+		margin-top: 30px;
+	}
+	
+	.botao-copiar {
+		font-size: 0.7em;
+		height: 30px;
+		left: 30%;
+		top: 45px;
+		width: 120px;
+	}
+	
+	.botao-copiar:hover, .botao-copiar:active {
+		font-size: 0.75em;
+		height: 32px;
+		width: 135px;
+	}
+	
+	.frase-rodape {		
+		font-size: 0.75em;
+		line-height: 1;
+		max-width: 285px;
+	}
+	
+	.redes-sociais {
+		font-size: 0.8em;
+	}
+}
+
+/* Fim responsividade celular */
+
+
+@keyframes chacoalha {
+	25% {
+		transform: translateX(4px);
+	}
+	50% {
+		transform: translateX(-4px);
+	}
+	75% {
+		transform: translateX(4px);
+	}
+}
